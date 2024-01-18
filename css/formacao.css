@@ -1,0 +1,179 @@
+.grid-formacao { 
+    display: grid;
+    padding: 120px 40px;
+    gap: 100px;
+    grid-template-columns: 1fr 2fr;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.background-formacao {
+    background-color: #141414;
+}
+
+.container-detalhes-formacao {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.titulo-formacao {
+    font-size: 9rem;
+    font-weight: 700;
+    line-height: 9rem;
+    text-transform: uppercase;
+    word-break: break-all;
+    max-width: 4ch;
+    color: #000;
+    grid-row: 1 / -1;
+}
+
+.destaque-formacao {
+    color: #fff;
+}
+
+.texto-formacao {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    color: #525252;
+    max-width: 40ch;
+}
+
+.formacoes {
+    display: flex;
+    gap: 30px;
+}
+
+.item-formacoes {
+    position: relative;
+    display: inline-block;
+    background-color: #090909;
+    border: 1px solid #000;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.item-formacoes::before {
+    content: "";
+    position: absolute;
+    width: 4px;
+    height: 20px;
+    background: var(--gradient, linear-gradient(180deg, #B6F829 0%, #67DD0A 100%));
+    top: 55px;
+    left: -4px;
+}
+
+.nivel-formacao {
+    color: #A3A3A3;
+    font-size: 0.85rem;
+    font-weight: 400;
+    line-height: 1.25rem;
+}
+
+.tipo-formacao {
+    color: #FFF;
+    margin-top: 10px;
+    font-size: 1.125rem;
+    font-weight: 700;
+    line-height: 1.56rem;
+}
+
+.faculdade-formacao {
+    color: #A3A3A3;
+    margin-top: 50px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 20px
+}
+
+.container-cursos-intensivos {
+    position: relative;
+}
+
+.detalhe-cursos {
+    position: absolute;
+    top: -4px;
+    left: -40px;
+}
+
+.titulo-cursos-intensivos {
+    color: #8F8F8F;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    font-weight: 700;
+    line-height: 1.25rem;
+    margin-bottom: 30px;
+}
+
+.detalhes-cursos-intensivos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.cursos-item {
+    display: flex;
+    justify-content: space-between;
+    grid-column: 1 / -1;
+}
+
+.cursos, .cursos-carga-horaria {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.nome-curso {
+    display: inline-block;
+    color: #FFF;
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 1.25rem;
+}
+
+.carga-horaria {
+    color: #8F8F8F;
+    font-size: 1.125rem;
+    font-weight: 400;
+    text-align: end;
+}
+
+.container-idiomas {
+    position: relative;
+}
+
+.detalhe-idiomas {
+    position: absolute;
+    top: -4px;
+    left: -40px;
+}
+
+.titulo-idiomas {
+    color: #8F8F8F;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    font-weight: 700;
+    line-height: 1.25rem;
+    margin-bottom: 30px;
+}
+
+.nivel-idiomas {
+    color:  #8F8F8F;
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 1.25rem;
+    text-align: start;
+}
+
+.idiomas {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.idioma {
+    color: #FFF;
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 1.25rem;
+}

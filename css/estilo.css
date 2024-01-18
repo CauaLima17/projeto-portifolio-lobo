@@ -1,0 +1,199 @@
+@import './global.css';
+@import './header.css';
+@import './perfil.css';
+@import './experiencia.css';
+@import './formacao.css';
+@import './contato.css';
+
+
+@media (width <= 1250px) {
+    .grid-experiencia, .grid-formacao {
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
+
+    .titulo-experiencia, .titulo-formacao {
+        font-size: 8rem;
+        max-width: 100ch;
+        text-align: center;
+        line-height: normal;
+    }
+
+    .texto-experiencia, .texto-formacao {
+        max-width: 100ch;
+        text-align: center;
+    }
+
+    .formacoes {
+        justify-content: center;
+    }
+
+    .data-projeto, .detalhe-cursos, .detalhe-idiomas {
+        display: none;
+    }
+}
+
+@media (width <= 1050px) {
+
+    .grid-experiencia, .grid-formacao {
+        gap: 40px;
+    }
+
+    .titulo-perfil {
+        font-size: 3.5rem;
+        line-height: 4rem;
+    }
+
+    .detalhe-perfil {
+        width: 100px;
+        top: -20px;
+        left: -30px;
+    }
+}
+
+@media (width <= 950px) {
+
+    .grid-perfil {
+        gap: 50px;
+        justify-content: center;
+    }
+
+    .titulo-experiencia, .titulo-formacao {
+        font-size: 7rem;
+        max-width: 20ch;
+    }
+
+    .texto-experiencia, .texto-formacao, .texto-contato {
+        font-size: 1.2rem;
+        line-height: 1.7rem;
+    }
+
+    .meios-de-contato {
+        font-size: 1.8rem;
+    }
+}
+
+@media (width <= 840px) {
+    .titulo-perfil {
+        font-size: 3rem;
+        line-height: 3.5rem;
+    }
+
+    .texto-perfil {
+        margin-top: 10px;
+    }
+
+    .detalhe-perfil {
+        width: 50px;
+        top: -5px;
+        left: -15px;
+    }
+
+    .grid-experiencia, .grid-formacao {
+        gap: 40px;
+    }
+
+    .grid-formacao {
+        padding: 80px 40px;
+    }
+
+    .grid-contato::before {
+        display: none;
+    }
+
+    .container-detalhes-experiencia, .container-detalhes-formacao {
+        gap: 40px;
+    }
+
+    .titulo-experiencia, .titulo-formacao {
+        font-size: 5.5rem;
+    }
+
+    .grid-contato {
+        padding: 80px 40px 60px 40px;
+        gap: 40px;
+        grid-template-columns: 1fr;
+    }
+
+    .footer-direitos {
+        margin-top: 30px;
+    }
+}
+
+@media (width <= 700px) {
+    .header {
+        flex-direction: column;
+        gap: 40px;
+        padding: 20px;
+    }
+
+    .header a {
+        background-color: #f5f5f5;
+        border-radius: 4px;
+    }
+
+    .header-menu li a {
+        padding: 10px 20px;
+    }
+
+    .header-menu li a::after {
+        display: none;
+    }
+
+    .titulo-perfil {
+        font-size: 2.5rem;
+        line-height: 3rem;
+    }
+
+    .item-projeto {
+        grid-template-columns: 1fr;
+    }
+
+    .formacoes {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .item-formacoes:nth-child(3) {
+        grid-column: 1 / -1;
+    }
+}
+
+@media (width <= 680px) {
+
+    .grid-perfil {
+        grid-template-columns: 1fr;
+    }
+
+    .foto-do-perfil {
+        display: none;
+    }
+
+    .titulo-perfil {
+        max-width: 40ch;
+    }
+
+    .texto-perfil {
+        max-width: 40ch;
+    }
+
+    .titulo-experiencia {
+        text-align: start;
+        font-size: 3rem;
+        color: #141414;
+        text-transform: capitalize;
+    }
+
+    .titulo-formacao {
+        text-align: start;
+        font-size: 3rem;
+        color: #f5f5f5;
+        text-transform: capitalize;
+    }
+
+    .texto-experiencia, .texto-formacao, .texto-contato {
+        text-align: start;
+    }
+
+    
+}

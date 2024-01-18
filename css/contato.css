@@ -1,0 +1,49 @@
+.background-contato {
+    background-color: #000;
+}
+
+.grid-contato {
+    display: grid;
+    padding: 120px 40px 40px 60px;
+    gap: 100px;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.grid-contato::before {
+    position: absolute;
+    content: "";
+    width: 140px;
+    height: 120px;
+    background: url(../img/detalhe.svg) no-repeat;
+    top: -60px;
+    left: 40px;
+}
+
+.texto-contato {
+    color: #CCC;
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 2rem;
+}
+
+.meios-de-contato {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    color: #FFF;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.footer-direitos {
+    display: inline-block;
+    color: #8F8F8F;
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 2rem;
+}
+
